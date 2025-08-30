@@ -39,6 +39,8 @@ body {
   width: 76%;
   height: auto;
   margin: 0px auto;
+  padding-bottom: 10px;
+  line-height: 1.1;
 }
 
 .result h3, .result p {
@@ -46,8 +48,8 @@ body {
 }
 
 .score {
-  width: 130px;
-  padding: 18px;
+  width: 150px;
+  padding: 12px;
   margin: auto;
   border-radius: 50%;
   background: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
@@ -56,6 +58,7 @@ body {
 .score h1 {
   margin-bottom: -14px;
   color: hsl(0, 0%, 100%);
+  font-size: 3rem;
 }
 
 .score p {
