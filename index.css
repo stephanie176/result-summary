@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap');
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: hsl(221, 100%, 96%);
   font-family: 'Hanken Grotesk', sans-serif;
@@ -15,19 +19,60 @@ body {
   justify-content: center;
   background-color: hsl(0, 0%, 100%);
   border-radius: 20px;
+  padding: 0px;
 }
 
 .result {
-  background-color: hsl(252, 100%, 67%);
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   text-align: center;
-  padding: 14px;
+  padding: 14px 40px;
   border-radius: 20px;
-  width: 45%;
+  width: 50%;
+}
+
+.result h2 {
+  color: hsl(0, 0%, 100%);
+}
+
+.p {
+  font-size: 16px;
+  width: 76%;
+  height: auto;
+  margin: 0px auto;
+}
+
+.result h3, .result p {
+  color: hsl(241, 100%, 89%);
+}
+
+.score {
+  width: 130px;
+  padding: 18px;
+  margin: auto;
+  border-radius: 50%;
+  background: linear-gradient(to top, hsla(241, 72%, 46%, 0), hsla(256, 72%, 46%, 1));
+}
+
+.score h1 {
+  margin-bottom: -14px;
+  color: hsl(0, 0%, 100%);
+}
+
+.score p {
+  font-size: 14px;
+  font-weight: 500;
+  color: hsl(241, 33%, 67%);
 }
 
 .summary {
-  width: 45%;
+  width: 50%;
   padding: 14px 20px;
+}
+
+@media(max-width:695px) {
+  .result, .summary {
+    width: 100%;
+  }
 }
 
 .summary h3 {
@@ -36,6 +81,7 @@ body {
 
 .component {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0px 10px;
   font-size: 14px;
@@ -47,10 +93,12 @@ body {
 
 .component > div {
   display: flex;
+  align-items: center;
   font-weight: 700;
 }
 
 .component img {
+  height: fit-content;
   margin-right: 8px;
 }
 
@@ -90,14 +138,16 @@ body {
 button {
   color: hsl(221, 100%, 96%);
   background-color: hsl(224, 30%, 27%);
-  padding: 10px;
+  padding: 13px;
   width: 100%;
+  border: none;
   border-radius: 20px;
   font-weight: bold;
   margin: 16px 0px;
   cursor: pointer;
 }
 
-button {
-
+button:hover {
+  background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  transition: .5s;
 }
